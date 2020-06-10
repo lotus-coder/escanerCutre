@@ -9,6 +9,8 @@ function conParametros() {
 function buscar {
     cat temp | grep open > resul
     cat resul
+    rm resul
+    rm temp
 }
 if [ "$0" != "" ]; then
     conParametros $1 $2
